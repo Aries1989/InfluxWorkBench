@@ -1,0 +1,14 @@
+
+*.ilk
+src/GeneratedFiles/moc/moc_predefs.h
+src/GeneratedFiles/moc/moc_MainWin.cpp
+*.cbt
+*.log
+*.tlog
+*.obj
+src/GeneratedFiles/objs/vc140.pdb
+*.filters
+src/GeneratedFiles/ui/ui_MainWin.h
+src/InfluxWorkBench.pro.user
+*.user
+src/InfluxWorkBench.pro.user
