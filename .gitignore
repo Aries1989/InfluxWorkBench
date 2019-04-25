@@ -12,3 +12,4 @@ src/GeneratedFiles/ui/ui_MainWin.h
 src/InfluxWorkBench.pro.user
 *.user
 src/InfluxWorkBench.pro.user
+src/.vs/InfluxWorkBench/v14/.suo
