@@ -13,3 +13,5 @@ src/InfluxWorkBench.pro.user
 *.user
 src/InfluxWorkBench.pro.user
 src/.vs/InfluxWorkBench/v14/.suo
+src/GeneratedFiles/ui/ui_ConnMgrDlg.h
+src/GeneratedFiles/moc/moc_ConnMgrDlg.cpp

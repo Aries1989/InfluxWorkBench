@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+class ConnMgrDlg;
+
 namespace Ui {
 class MainWin;
 }
@@ -16,7 +18,15 @@ public:
     ~MainWin();
 
 private:
+	void InitConnections();
+
+private slots:
+	void sltExit();
+	void sltConnManage();
+
+private:
     Ui::MainWin *ui;
+	ConnMgrDlg* m_pConnMgrDlg;
 };
 
 #endif // MAINWIN_H

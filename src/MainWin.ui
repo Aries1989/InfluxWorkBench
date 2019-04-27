@@ -34,6 +34,7 @@
      <string>Connection</string>
     </property>
     <addaction name="actRefresh"/>
+    <addaction name="actManage"/>
    </widget>
    <widget class="QMenu" name="menuQuery">
     <property name="title">
@@ -96,6 +97,11 @@
   <action name="actAbout">
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actManage">
+   <property name="text">
+    <string>Manage</string>
    </property>
   </action>
  </widget>

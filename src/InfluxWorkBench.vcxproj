@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{79D2EA49-3EE8-3A8D-A6E2-10FBAEAE1436}</ProjectGuid>
+    <ProjectGuid>{48905A40-B0F2-3640-BAC7-814148B1A551}</ProjectGuid>
     <RootNamespace>InfluxWorkBench</RootNamespace>
     <Keyword>Qt4VSv1.0</Keyword>
   </PropertyGroup>
@@ -135,22 +135,40 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ConnMgrDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="MainWin.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="ConnMgrDlg.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ConnMgrDlg.h;GeneratedFiles\moc\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/moc/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/GitHub/InfluxWorkBench/src -ID:/GitHub/InfluxWorkBench/src -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore ConnMgrDlg.h -o GeneratedFiles\moc\moc_ConnMgrDlg.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ConnMgrDlg.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">GeneratedFiles\moc\moc_ConnMgrDlg.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ConnMgrDlg.h;GeneratedFiles\moc\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/moc/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/GitHub/InfluxWorkBench/src -ID:/GitHub/InfluxWorkBench/src -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore ConnMgrDlg.h -o GeneratedFiles\moc\moc_ConnMgrDlg.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ConnMgrDlg.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">GeneratedFiles\moc\moc_ConnMgrDlg.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
     <CustomBuild Include="MainWin.h">
       <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MainWin.h;GeneratedFiles\moc\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/moc/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IE:/GitHub_Coding/InfluxWorkBench/InfluxWorkBench/src -IE:/GitHub_Coding/InfluxWorkBench/InfluxWorkBench/src -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore MainWin.h -o GeneratedFiles\moc\moc_MainWin.cpp</Command>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/moc/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/GitHub/InfluxWorkBench/src -ID:/GitHub/InfluxWorkBench/src -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore MainWin.h -o GeneratedFiles\moc\moc_MainWin.cpp</Command>
       <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC MainWin.h</Message>
       <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">GeneratedFiles\moc\moc_MainWin.cpp;%(Outputs)</Outputs>
       <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MainWin.h;GeneratedFiles\moc\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/moc/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -IE:/GitHub_Coding/InfluxWorkBench/InfluxWorkBench/src -IE:/GitHub_Coding/InfluxWorkBench/InfluxWorkBench/src -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore MainWin.h -o GeneratedFiles\moc\moc_MainWin.cpp</Command>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/moc/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/GitHub/InfluxWorkBench/src -ID:/GitHub/InfluxWorkBench/src -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore MainWin.h -o GeneratedFiles\moc\moc_MainWin.cpp</Command>
       <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC MainWin.h</Message>
       <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">GeneratedFiles\moc\moc_MainWin.cpp;%(Outputs)</Outputs>
     </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\moc\moc_ConnMgrDlg.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeneratedFiles\moc\moc_MainWin.cpp" />
@@ -169,7 +187,23 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui\ui_ConnMgrDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui\ui_MainWin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ConnMgrDlg.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ConnMgrDlg.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe ConnMgrDlg.ui -o GeneratedFiles\ui\ui_ConnMgrDlg.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC ConnMgrDlg.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">GeneratedFiles\ui\ui_ConnMgrDlg.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ConnMgrDlg.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe ConnMgrDlg.ui -o GeneratedFiles\ui\ui_ConnMgrDlg.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC ConnMgrDlg.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">GeneratedFiles\ui\ui_ConnMgrDlg.h;%(Outputs)</Outputs>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="MainWin.ui">

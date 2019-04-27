@@ -41,8 +41,11 @@ CONFIG(debug, debug|release){
 }
 
 SOURCES += main.cpp\
-        MainWin.cpp
+        MainWin.cpp \
+    ConnMgrDlg.cpp
 
-HEADERS  += MainWin.h
+HEADERS  += MainWin.h \
+    ConnMgrDlg.h
 
-FORMS    += MainWin.ui
+FORMS    += MainWin.ui \
+    ConnMgrDlg.ui
